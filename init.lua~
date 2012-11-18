@@ -132,10 +132,10 @@ minetest.register_node("tuyau:pompe", {
 	groups = {crumbly=3},
 })
 
--- Craft du tuyau vide :
+-- Craft de la pompe :
 
 minetest.register_craft({
-	output = "tuyau:pompe",
+	output = "tuyau:pompe" 3,
 	recipe = {
 		{'default:steel_ingot', 'default:mese', 'default:steel_ingot'},
 		{'default:mese', '', 'default:mese'},
@@ -329,7 +329,7 @@ minetest.register_abm({
 	end,
 })
 
-minetest.register_on_dignode(function(p, node)
+minetest.register_on_dignode(function(pos, node)
 	if node.name=="tuyau:sortie_water" then
 		local pos2 = {x=pos.x, y=pos.y-1, z=pos.z}
 		if minetest.env:get_node(pos2).name=="default:water_source" then

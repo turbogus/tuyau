@@ -132,10 +132,10 @@ minetest.register_node("tuyau:pompe", {
 	groups = {crumbly=3},
 })
 
--- Craft du tuyau vide :
+-- Craft de la pompe :
 
 minetest.register_craft({
-	output = "tuyau:pompe",
+	output = "tuyau:pompe" 3,
 	recipe = {
 		{'default:steel_ingot', 'default:mese', 'default:steel_ingot'},
 		{'default:mese', '', 'default:mese'},
