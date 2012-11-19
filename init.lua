@@ -20,7 +20,7 @@ minetest.register_node("tuyau:tuyau", {
 -- Craft du tuyau vide :
 
 minetest.register_craft({
-	output = "tuyau:tuyau",
+	output = "tuyau:tuyau" 5,
 	recipe = {
 		{'default:glass', 'default:glass', 'default:glass'},
 		{'default:glass', '', 'default:glass'},
