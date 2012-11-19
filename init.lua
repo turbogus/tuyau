@@ -20,7 +20,7 @@ minetest.register_node("tuyau:tuyau", {
 -- Craft du tuyau vide :
 
 minetest.register_craft({
-	output = "tuyau:tuyau" 5,
+	output = 'tuyau:tuyau 5'  ,
 	recipe = {
 		{'default:glass', 'default:glass', 'default:glass'},
 		{'default:glass', '', 'default:glass'},
@@ -135,7 +135,7 @@ minetest.register_node("tuyau:pompe", {
 -- Craft de la pompe :
 
 minetest.register_craft({
-	output = "tuyau:pompe" 3,
+	output = 'tuyau:pompe 3',
 	recipe = {
 		{'default:steel_ingot', 'default:mese', 'default:steel_ingot'},
 		{'default:mese', '', 'default:mese'},
@@ -237,7 +237,7 @@ minetest.register_node("tuyau:sortie", {
 -- Craft de la sortie :
 
 minetest.register_craft({
-	output = "tuyau:sortie",
+	output = 'tuyau:sortie 3',
 	recipe = {
 		{'default:glass', 'default:glass', 'default:glass'},
 		{'default:glass', '', 'default:glass'},
