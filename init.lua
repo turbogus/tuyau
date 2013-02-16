@@ -1,3 +1,10 @@
+-- tuyau
+
+--créé par turbogus et rerem
+
+-- code licence gpl v2 ou superieur
+-- graphisme sous licence CC-BY-NC-SA
+
 -----------------
 --Tuyau vide
 -----------------
@@ -20,7 +27,7 @@ minetest.register_node("tuyau:tuyau", {
 -- Craft du tuyau vide :
 
 minetest.register_craft({
-	output = 'tuyau:tuyau 5'  ,
+	output = "tuyau:tuyau",
 	recipe = {
 		{'default:glass', 'default:glass', 'default:glass'},
 		{'default:glass', '', 'default:glass'},
@@ -132,10 +139,10 @@ minetest.register_node("tuyau:pompe", {
 	groups = {crumbly=3},
 })
 
--- Craft de la pompe :
+-- Craft du tuyau vide :
 
 minetest.register_craft({
-	output = 'tuyau:pompe 3',
+	output = "tuyau:pompe",
 	recipe = {
 		{'default:steel_ingot', 'default:mese', 'default:steel_ingot'},
 		{'default:mese', '', 'default:mese'},
@@ -237,7 +244,7 @@ minetest.register_node("tuyau:sortie", {
 -- Craft de la sortie :
 
 minetest.register_craft({
-	output = 'tuyau:sortie 3',
+	output = "tuyau:sortie",
 	recipe = {
 		{'default:glass', 'default:glass', 'default:glass'},
 		{'default:glass', '', 'default:glass'},
